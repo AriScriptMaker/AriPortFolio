@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-<section>
+<section id="inicio">
     <nav class="navbar bg-secondary border rounded">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="img/Iconimage.png" alt="fotodeperfil" class="rounded-circle" width="80" height="80"></a>
@@ -26,19 +26,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="#sobre">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Outro Projetos</a>
+                  <a class="nav-link" href="#outrosProjetos">Outro Projetos</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Sobre
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Formações</a></li>
-                    <li><a class="dropdown-item" href="#">Dados de Contato</a></li>
-                    <li><a class="dropdown-item" href="#">Experiencia Profissional</a></li>
+                    <li><a class="dropdown-item" href="#formações">Formações</a></li>
+                    <li><a class="dropdown-item" href="#dadosDeContato">Dados de Contato</a></li>
+                    <li><a class="dropdown-item" href="#experienciasProfissionais">Experiencia Profissional</a></li>
                     <li>
                   </ul>
                 </li>
@@ -50,46 +50,43 @@
 </section>
     </header>
 
-    <section class="container-fluid">
+    <section class="carousel-section">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/sentadoComCoringaHorizontal.jpg" class="d-block w-100" alt="sentadoComOCoringa">
-            </div>
-            <div class="carousel-item">
-              <img src="img/lagoCamposHorizontal.jpg" class="d-block w-100" alt="lagoEmCamposJ">
-            </div>
-            <div class="carousel-item">
-              <img src="img/cachoeirasCamposHorizontal.jpg" class="d-block w-100" alt="cachoeirasCamposJ">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/sentadoComCoringaHorizontal.jpg" class="d-block w-100 carousel-img" alt="sentadoComOCoringa">
+          </div>
+          <div class="carousel-item">
+            <img src="img/lagoCamposHorizontal.jpg" class="d-block w-100 carousel-img" alt="lagoEmCamposJ">
+          </div>
+          <div class="carousel-item">
+            <img src="img/cachoeirasCamposHorizontal.jpg" class="d-block w-100 carousel-img" alt="cachoeirasCamposJ">
           </div>
         </div>
-  </section>
+      </div>
+    </section>
 
-    <section>
-      <fieldset>
-      <legend>Sobre</legend>
-      </fieldset>
+    <section id="sobre" class="border rounded-info bg-info-subtle m-2">
+      <legend class="text-center">Sobre</legend>
+      <p class="border bg-light">Olá me chamo Aristeu, Sou Focado e proativo, com força de vontade e facilidade para aprender. Tenho como objetivo sempre me desenvolver profissionalmente buscando minhas metas pessoais, e empresariais.</p>
     </section>
 
 
-    <section class="m-1">
-      <fieldset>
-        <legend>Dados de Contato</legend>
+    <section id="dadosDeContato" class="m-1 p-2">
+       <legend class="text-center border rounded-info bg-body-secondary">Dados de Contato</legend>
         <dl>
-          <dt><i class="bi bi-telephone-inbound">Telefone:</i></dt>
-          <dd>55 (11) 96659-1246</dd>
-          <dt><i class="bi bi-envelope">E-mail:</i></dt>
-          <dd>shadowmonarka555@gmail.com</dd>
-          <dt><i class="bi bi-linkedin">Linkedin:</i></dt>
+          <dt><i class="bi bi-telephone-inbound text">Telefone:</i></dt>
+          <dd class="text-black">55 (11) 96659-1246</dd>
+          <dt><i class="bi bi-envelope text">E-mail:</i></dt>
+          <dd class="text-black">shadowmonarka555@gmail.com</dd>
+          <dt><i class="bi bi-linkedin text">Linkedin:</i></dt>
           <dd><a href="www.linkedin.com/in/aristeu-de-cristo-leite-neto-a72486181">Linkedin-Aristeu</a></dd>
-          <dt>Localidade:</dt>
+          <dt class="text">Localidade:</dt>
           <dd><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7318.735227348147!2d-46.63164536185636!3d-23.48326492513833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef64ead8a7b01%3A0x46a1888231a00d2b!2sMandaqui%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1726783380788!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></dd>
         </dl>
-      </fieldset>
     </section>
     
-    <section class="m-1">
+    <section id="formações" class="m-1">
       <table class="table table-success table-striped">
         <thead class="text-center">
           <tr>
@@ -144,9 +141,9 @@
         </table>
     </section>
     
-    <section class="m-1 container-fluid"></section>
-      <fieldset>
-        <legend class="text-lg-center border bg-info-subtle">Experiencias Profissionais</legend>
+    <section id="experienciasProfissionais" class="m-1 container-fluid">
+        <legend class="text-lg-center border rounded bg-info-subtle">Experiencias Profissionais</legend>
+        
           <div class="card text-center">
             <div class="card-body">
             <h5 class="card-title">Burger King Brasil</h5>
@@ -168,19 +165,16 @@
             (15/01/2021~)
             </div>
           </div>
-      </fieldset>
     </section>
 
-    <section class="m-1">
-      <fieldset>
-        <legend>outros Projetos</legend>
+    <section id="outrosProjetos" class="m-1 bg-warning">
+        <legend class="text-center">Outros Projetos</legend>
         <ul>
           <li>campo destinado a menções de projetos futuros.</li>
         </ul>
-      </fieldset>
     </section>
 
-    <section>
+    <section id="rodape">
       <footer class="bg-secondary text-center text-lg-start">
         <div class="text-center text-light p-3">
           © 2024 Produzido por:
@@ -191,5 +185,6 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
